@@ -146,6 +146,88 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/13/%E5%BB%BA%E7%AB%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="HumaneMoth">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yankai's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/13/%E5%BB%BA%E7%AB%99/" class="post-title-link" itemprop="url">建站</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-03-13 21:46:17 / Modified: 22:44:10" itemprop="dateCreated datePublished" datetime="2024-03-13T21:46:17+08:00">2024-03-13</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="怎么又建站？"><a href="#怎么又建站？" class="headerlink" title="怎么又建站？"></a>怎么又建站？</h2><p>近期见到同学生日建站颇为喜悦，又见老友的技术博客欣欣向荣，对两年来的虚度光阴无甚进步十分惭愧</p>
+<p>一年多后的又一次心血来潮下，我再次在网上搜索起建站教程</p>
+<p>本来想用 Jekyll 搭建博客，但不甚顺利，于是又回头找到了我忠实的 Hexo</p>
+<p>跟官网走了几步，没想到这次配环境以及部署到 Github Pages 出乎意料的平稳，几分钟便完成了整个流程</p>
+<p>相比于 Jekyll 环境版本都没配明白，真是天差地别</p>
+<h2 id="完整流程"><a href="#完整流程" class="headerlink" title="完整流程"></a>完整流程</h2><p>安装 Nodejs 和 Git (官网即可)</p>
+<p>安装Hexo</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>执行以下命令创建所需文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>安装 hexo-deployer-git</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>在 _config.yml 中添加 &#x2F; 替换以下配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/&lt;username&gt;/&lt;project&gt;</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
+<p>创建本地服务器，查看网页是否正常</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>部署到 Github Pages</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
+<p>这次也是懒得折腾花哨的主题，加上希望一个快些的响应速度，使用了网上最多人推荐的next</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<p>在 _config.yml 中修改 theme 为 next 即可</p>
+<h2 id="想写点啥"><a href="#想写点啥" class="headerlink" title="想写点啥"></a>想写点啥</h2><p>鉴于建站的目的，主要包含学到的新内容，包括但不限于硬件 &#x2F; 软件技术和工程知识</p>
+<p>类似日记的自我反思、读书观影感想、人生思考</p>
+<p>任何我想记的东西，新知、趣闻、游记 …</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/13/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -278,7 +360,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
